@@ -7,10 +7,10 @@ pipeline {
                  checkout scm
             }
         }
-      stage('buld & Test')
+      stage('buld & Test') {
           steps {
               sh 'mvn clean install'
             }
        }
     }
-
+}
